@@ -1,5 +1,14 @@
 # RAG benchmark
 
+## 运行评测Cli工具
+
+```sh
+export export READER_JSONL_FILE_PATH='./data/eval.jsonl'
+export OPENAI_API_KEY=
+export OPENAI_BASE_URL=
+python cli.py --reader=jsonl --metrics=context_recall
+```
+
 ## 数据集构建
 
 ### 数据结构

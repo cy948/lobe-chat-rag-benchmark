@@ -9,6 +9,18 @@ export OPENAI_BASE_URL=
 python cli.py --reader=jsonl --metrics=context_recall
 ```
 
+参数参考：
+
+1. `--reader`读取数据集的Reader，非必选，默认为`jsonl`；
+
+2. `--metrics`评测数据集的指标，非必选，默认为`context_recall`，可选值有：
+- `context_recall`
+- `answer_relevance`
+- `context_utilization`
+- `context_entities_recall`
+- `answer_semantic_similarity`
+> 指标解释见：https://docs.ragas.io/en/latest/concepts/metrics/index.html
+
 ## 数据集构建
 
 ### 数据结构
